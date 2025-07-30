@@ -25,18 +25,18 @@ const images = [
   }
 ];
 
-const gallery = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallery")
 
 const items = images.map(({ url, alt }) => {
-  const li = document.createElement("li");
-  li.classList.add("gallery-item");
+  const li = document.createElement("li")
+  li.classList.add("gallery-item")
 
-  const img = document.createElement("img");
-  img.src = url;
-  img.alt = alt;
+  const img = document.createElement("img")
+  img.src = url
+  img.alt = alt
 
-  li.append(img);
-  return li;
+  li.append(img)
+  return li
 });
 
-gallery.append(...items);
+gallery.append(...items)
